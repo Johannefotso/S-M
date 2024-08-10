@@ -11,28 +11,28 @@
         <h1>Social Media & Mental Health</h1>
         <nav>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Resources</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#resources">Resources</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
     
-    <main>
+    <main id="home">
         <section class="feature-image">
             <img src="feature-image.jpg" alt="Main Feature Image">
         </section>
         
-        <section class="introduction">
+        <section class="introduction" id="about">
             <h2>Why Social Media Impacts Mental Health</h2>
             <p>
                 Social media platforms have become integral to our daily lives, offering numerous benefits like staying connected with friends and family, discovering new content, and sharing personal experiences. However, excessive use and dependence on these platforms can lead to mental health issues such as anxiety, depression, and low self-esteem. Understanding these effects is crucial for developing a balanced approach to social media usage.
             </p>
         </section>
         
-        <section class="blog-posts">
+        <section class="blog-posts" id="blog">
             <h2>Latest Blog Posts</h2>
             <article>
                 <h3><a href="#">The Rise of Social Media: A Double-Edged Sword</a></h3>
@@ -48,7 +48,7 @@
             </article>
         </section>
         
-        <section class="tips-strategies">
+        <section class="tips-strategies" id="resources">
             <h2>Tips & Strategies</h2>
             <ul>
                 <li>Manage Screen Time: Set daily limits on your social media usage.</li>
@@ -65,23 +65,27 @@
             <iframe width="560" height="315" src="https://www.youtube.com/embed/your_video_id" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
         </section>
         
-        <section class="community-forum">
+        <section class="community-forum" id="forumSection">
             <h2>Community Forum & User Stories</h2>
             <p>Join our community forum to share your experiences with social media and mental health. Read inspiring stories from others who have navigated similar challenges, and find support from a like-minded community.</p>
             <!-- Example link to forum -->
             <a href="#">Join the Community Forum</a>
         </section>
         
-        <section class="tools-quizzes">
+        <section class="tools-quizzes" id="contact">
             <h2>Tools & Quizzes</h2>
             <p>Utilize our tools and quizzes to assess your social media habits. Set personal goals for reducing screen time and improving your mental well-being.</p>
-            <!-- Example quiz -->
-            <a href="#">Take the Social Media Habits Quiz</a>
+            <button id="quizButton">Take the Social Media Habits Quiz</button>
+            <p id="quizResult"></p>
         </section>
+
+        <button id="forumToggleButton">Toggle Forum Visibility</button>
     </main>
     
     <footer>
         <p>Links | Privacy Policy | Contact</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
